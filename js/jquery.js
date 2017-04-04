@@ -17,3 +17,11 @@ $(function(){
 	console.log('コンテンツ:' + b.outerHeight() + 'x' + b.outerWidth());
 	console.log('コンテンツ:' + b.outerHeight(true) + 'x' + b.outerWidth(true));
 });
+
+$(function(){
+	$('#search')
+	.confirm()
+	.click(function(){
+		console.log('処理が実行されました');
+	});
+});
