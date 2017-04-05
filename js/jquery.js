@@ -30,7 +30,7 @@ $(function(){
 
 	$('#show').change(function(){
 		if(!this.checked){
-			button = $('#log').detach();
+			button = $('#log').detack();
 		} else{
 			$('body').append(button);
 		}
@@ -40,3 +40,18 @@ $(function(){
 		console.log('buttonがクリックされました');
 	});
 });
+
+
+$(function(){
+	$('.content').click(function(){
+		$('.content01').hide();
+	})
+})
+
+$(document).ready(function(){
+	$('.content01').fadeIn(3000)
+});
+
+// $(document).ready(function() {
+// $('body').fadeIn(4000);
+// });
