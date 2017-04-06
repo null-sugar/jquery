@@ -6,28 +6,41 @@
   <script src="./js/jquery.js"></script>
   <link rel="stylesheet" href="css/style.css">
   <title>Document</title>
+<style>
+  .top{
+    width: 500px;
+  }
+  .chara{
+    margin: 30px;
+  }
+  .main{
+    position: absolute;
+    top: 150px;
+    left: 250px;
+    width: 250px;
+  }
+</style>
 </head>
+
 <body>
-  <div class="list01 d_flex">
-    <div class="list01_item">
-      <span class="list01_image"><img src="http://placehold.it/200x150"/></span>
-      <span class="list01_title">春</span>
-    </div>
-    <div class="list01_item">
-      <span class="list01_image"><img src="http://placehold.it/200x150"/></span>
-      <span class="list01_title">夏</span>
-    </div>
-    <div class="list01_item">
-      <span class="list01_image"><img src="http://placehold.it/200x150"/></span>
-      <span class="list01_title">秋</span>
-    </div>
-    <div class="list01_item">
-      <span class="list01_image"><img src="http://placehold.it/200x150"/></span>
-      <span class="list01_title">冬</span>
-    </div>
-  </div>
+ 
 
   <img id="logo" src="" alt="">
   <div class="box"></div>
+
+  <div class="top">Class.top</div>
+
+  <h3 class="composition">テキスト</h3>
+  <div class="composition_child">
+    <p>1</p>
+    <p>2</p>
+    <p>3</p>
+  </div>
+
+ <label>
+   <input id="show" type="checkbox" checked>表示非表示
+ </label>
+  <button id="log" type="button">ログ表示</button>
+
 </body>
 </html>

@@ -17,3 +17,26 @@ $(function(){
 	console.log('コンテンツ:' + b.outerHeight() + 'x' + b.outerWidth());
 	console.log('コンテンツ:' + b.outerHeight(true) + 'x' + b.outerWidth(true));
 });
+
+
+$(function(){
+	//$('.composition').remove();
+	$('.composition').empty();
+});
+
+
+$(function(){
+	var button;
+
+	$('#show').change(function(){
+		if(!this.checked){
+			button = $('#log').detach();
+		} else{
+			$('body').append(button);
+		}
+	});
+
+	$('#log').click(function(){
+		console.log('buttonがクリックされました');
+	});
+});
